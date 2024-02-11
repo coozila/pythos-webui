@@ -27,3 +27,38 @@ wandb
 # bitsandbytes
 bitsandbytes==0.41.1; platform_system != "Windows"
 https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.41.1-py3-none-win_amd64.whl; platform_system == "Windows"
+
+#coozila search
+requests
+beautifulsoup4
+summarizer
+datetime
+PyPDF2
+
+#superboogav2
+beautifulsoup4==4.12.2
+chromadb==0.3.18
+lxml
+optuna
+pandas==2.0.3
+posthog==2.4.2
+sentence_transformers==2.2.2
+spacy
+pytextrank
+num2words
+
+#google translator
+deep-translator==1.9.2
+
+#openai
+SpeechRecognition==3.10.0
+flask_cloudflared==0.0.12
+sentence-transformers
+tiktoken
+
+#long Term Memory Qdrant
+qdrant-client==1.5.4
+sentence_transformers==2.2.2
+
+#xformers
+xformers==0.0.20
