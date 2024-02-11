@@ -1,6 +1,6 @@
 version: "3.3"
 services:
-  text-generation-webui:
+  pythos-webui:
     build:
       context: .
       args:
@@ -34,14 +34,14 @@ services:
     stdin_open: true
     tty: true
     volumes:
-      - ./cache:/home/app/text-generation-webui/cache
-      - ./characters:/home/app/text-generation-webui/characters
-      - ./extensions:/home/app/text-generation-webui/extensions
-      - ./loras:/home/app/text-generation-webui/loras
-      - ./logs:/home/app/text-generation-webui/logs
-      - ./models:/home/app/text-generation-webui/models
-      - ./presets:/home/app/text-generation-webui/presets
-      - ./prompts:/home/app/text-generation-webui/prompts
-      - ./softprompts:/home/app/text-generation-webui/softprompts
-      - ./training:/home/app/text-generation-webui/training
+      - ./cache:/home/app/pythos-webui/cache
+      - ./characters:/home/app/pythos-webui/characters
+      - ./extensions:/home/app/pythos-webui/extensions
+      - ./loras:/home/app/pythos-webui/loras
+      - ./logs:/home/app/pythos-webui/logs
+      - ./models:/home/app/pythos-webui/models
+      - ./presets:/home/app/pythos-webui/presets
+      - ./prompts:/home/app/pythos-webui/prompts
+      - ./softprompts:/home/app/pythos-webui/softprompts
+      - ./training:/home/app/pythos-webui/training
       - ./cloudflared:/etc/cloudflared

@@ -4,25 +4,25 @@ A Gradio web UI for Large Language Models.
 
 Its goal is to become the [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) of text generation.
 
-|![Image1](https://github.com/oobabooga/screenshots/raw/main/print_instruct.png) | ![Image2](https://github.com/oobabooga/screenshots/raw/main/print_chat.png) |
+|![Image1](https://github.com/coozila/screenshots/raw/main/print_instruct.png) | ![Image2](https://github.com/coozila/screenshots/raw/main/print_chat.png) |
 |:---:|:---:|
-|![Image1](https://github.com/oobabooga/screenshots/raw/main/print_default.png) | ![Image2](https://github.com/oobabooga/screenshots/raw/main/print_parameters.png) |
+|![Image1](https://github.com/coozila/screenshots/raw/main/print_default.png) | ![Image2](https://github.com/coozila/screenshots/raw/main/print_parameters.png) |
 
 ## Features
 
 * 3 interface modes: default (two columns), notebook, and chat.
 * Multiple model backends: [Transformers](https://github.com/huggingface/transformers), [llama.cpp](https://github.com/ggerganov/llama.cpp) (through [llama-cpp-python](https://github.com/abetlen/llama-cpp-python)), [ExLlamaV2](https://github.com/turboderp/exllamav2), [AutoGPTQ](https://github.com/PanQiWei/AutoGPTQ), [AutoAWQ](https://github.com/casper-hansen/AutoAWQ), [GPTQ-for-LLaMa](https://github.com/qwopqwop200/GPTQ-for-LLaMa), [CTransformers](https://github.com/marella/ctransformers), [QuIP#](https://github.com/Cornell-RelaxML/quip-sharp).
 * Dropdown menu for quickly switching between different models.
-* Large number of extensions (built-in and user-contributed), including Coqui TTS for realistic voice outputs, Whisper STT for voice inputs, translation, [multimodal pipelines](https://github.com/oobabooga/text-generation-webui/tree/main/extensions/multimodal), vector databases, Stable Diffusion integration, and a lot more. See [the wiki](https://github.com/oobabooga/text-generation-webui/wiki/07-%E2%80%90-Extensions) and [the extensions directory](https://github.com/oobabooga/text-generation-webui-extensions) for details.
-* [Chat with custom characters](https://github.com/oobabooga/text-generation-webui/wiki/03-%E2%80%90-Parameters-Tab#character).
+* Large number of extensions (built-in and user-contributed), including Coqui TTS for realistic voice outputs, Whisper STT for voice inputs, translation, [multimodal pipelines](https://github.com/coozila/pythos-webui/tree/main/extensions/multimodal), vector databases, Stable Diffusion integration, and a lot more. See [the wiki](https://github.com/coozila/pythos-webui/wiki/07-%E2%80%90-Extensions) and [the extensions directory](https://github.com/coozila/pythos-webui-extensions) for details.
+* [Chat with custom characters](https://github.com/coozila/pythos-webui/wiki/03-%E2%80%90-Parameters-Tab#character).
 * Precise chat templates for instruction-following models, including Llama-2-chat, Alpaca, Vicuna, Mistral.
 * LoRA: train new LoRAs with your own data, load/unload LoRAs on the fly for generation.
 * Transformers library integration: load models in 4-bit or 8-bit precision through bitsandbytes, use llama.cpp with transformers samplers (`llamacpp_HF` loader), CPU inference in 32-bit precision using PyTorch.
-* OpenAI-compatible API server with Chat and Completions endpoints -- see the [examples](https://github.com/oobabooga/text-generation-webui/wiki/12-%E2%80%90-OpenAI-API#examples).
+* OpenAI-compatible API server with Chat and Completions endpoints -- see the [examples](https://github.com/coozila/pythos-webui/wiki/12-%E2%80%90-OpenAI-API#examples).
 
 ## How to install
 
-1) Clone or [download](https://github.com/oobabooga/text-generation-webui/archive/refs/heads/main.zip) the repository.
+1) Clone or [download](https://github.com/coozila/pythos-webui/archive/refs/heads/main.zip) the repository.
 2) Run the `start_linux.sh`, `start_windows.bat`, `start_macos.sh`, or `start_wsl.bat` script depending on your OS.
 3) Select your GPU vendor when asked.
 4) Once the installation ends, browse to `http://localhost:7860/?__theme=dark`.
@@ -46,7 +46,7 @@ The script uses Miniconda to set up a Conda environment in the `installer_files`
 If you ever need to install something manually in the `installer_files` environment, you can launch an interactive shell using the cmd script: `cmd_linux.sh`, `cmd_windows.bat`, `cmd_macos.sh`, or `cmd_wsl.bat`.
 
 * There is no need to run any of those scripts (`start_`, `update_`, or `cmd_`) as admin/root.
-* For additional instructions about AMD and WSL setup, consult [the documentation](https://github.com/oobabooga/text-generation-webui/wiki).
+* For additional instructions about AMD and WSL setup, consult [the documentation](https://github.com/coozila/pythos-webui/wiki).
 * For automated installation, you can use the `GPU_CHOICE`, `USE_CUDA118`, `LAUNCH_AFTER_INSTALL`, and `INSTALL_EXTENSIONS` environment variables. For instance: `GPU_CHOICE=A USE_CUDA118=FALSE LAUNCH_AFTER_INSTALL=FALSE INSTALL_EXTENSIONS=FALSE ./start_linux.sh`.
 
 ### Manual installation using Conda
@@ -99,8 +99,8 @@ conda install -y -c "nvidia/label/cuda-12.1.1" cuda
 #### 3. Install the web UI
 
 ```
-git clone https://github.com/oobabooga/text-generation-webui
-cd text-generation-webui
+git clone https://github.com/coozila/pythos-webui
+cd pythos-webui
 pip install -r <requirements file according to table below>
 ```
 
@@ -121,7 +121,7 @@ Requirements file to use:
 
 ```
 conda activate textgen
-cd text-generation-webui
+cd pythos-webui
 python server.py
 ```
 
@@ -180,8 +180,8 @@ mkdir -p logs cache
 docker compose up --build
 ```
 
-* You need to have Docker Compose v2.17 or higher installed. See [this guide](https://github.com/oobabooga/text-generation-webui/wiki/09-%E2%80%90-Docker) for instructions.
-* For additional docker files, check out [this repository](https://github.com/Atinoda/text-generation-webui-docker).
+* You need to have Docker Compose v2.17 or higher installed. See [this guide](https://github.com/coozila/pythos-webui/wiki/09-%E2%80%90-Docker) for instructions.
+* For additional docker files, check out [this repository](https://github.com/Atinoda/pythos-webui-docker).
 
 ### Updating the requirements
 
@@ -189,7 +189,7 @@ From time to time, the `requirements*.txt` change. To update, use these commands
 
 ```
 conda activate textgen
-cd text-generation-webui
+cd pythos-webui
 pip install -r <requirements file that you have used> --upgrade
 ```
 </details>
@@ -367,16 +367,16 @@ List of command-line flags
 
 ## Documentation
 
-https://github.com/oobabooga/text-generation-webui/wiki
+https://github.com/coozila/pythos-webui/wiki
 
 ## Downloading models
 
-Models should be placed in the folder `text-generation-webui/models`. They are usually downloaded from [Hugging Face](https://huggingface.co/models?pipeline_tag=text-generation&sort=downloads).
+Models should be placed in the folder `pythos-webui/models`. They are usually downloaded from [Hugging Face](https://huggingface.co/models?pipeline_tag=text-generation&sort=downloads).
 
 * GGUF models are a single file and should be placed directly into `models`. Example:
 
 ```
-text-generation-webui
+pythos-webui
 └── models
     └── llama-2-13b-chat.Q4_K_M.gguf
 ```
@@ -384,7 +384,7 @@ text-generation-webui
 * The remaining model types (like 16-bit transformers models and GPTQ models) are made of several files and must be placed in a subfolder. Example:
 
 ```
-text-generation-webui
+pythos-webui
 ├── models
 │   ├── lmsys_vicuna-33b-v1.3
 │   │   ├── config.json
@@ -412,15 +412,15 @@ Run `python download-model.py --help` to see all the options.
 
 ## Google Colab notebook
 
-https://colab.research.google.com/github/oobabooga/text-generation-webui/blob/main/Colab-TextGen-GPU.ipynb
+https://colab.research.google.com/github/coozila/pythos-webui/blob/main/Colab-TextGen-GPU.ipynb
 
 ## Contributing
 
-If you would like to contribute to the project, check out the [Contributing guidelines](https://github.com/oobabooga/text-generation-webui/wiki/Contributing-guidelines).
+If you would like to contribute to the project, check out the [Contributing guidelines](https://github.com/coozila/pythos-webui/wiki/Contributing-guidelines).
 
 ## Community
 
-* Subreddit: https://www.reddit.com/r/oobabooga/
+* Subreddit: https://www.reddit.com/r/coozila/
 * Discord: https://discord.gg/jwZCF2dPQN
 
 ## Acknowledgment

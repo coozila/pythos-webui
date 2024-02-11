@@ -18,7 +18,7 @@ https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 Use these commands to launch the image:
 
 ```
-cd text-generation-webui
+cd pythos-webui
 ln -s docker/{nvidia/Dockerfile,docker-compose.yml,.dockerignore} .
 cp docker/.env.example .env
 # Edit .env and set TORCH_CUDA_ARCH_LIST based on your GPU model
@@ -63,7 +63,7 @@ By [@loeken](https://github.com/loeken).
 #### 0. youtube video
 A video walking you through the setup can be found here:
 
-[![oobabooga text-generation-webui setup in docker on ubuntu 22.04](https://img.youtube.com/vi/ELkKWYh8qOk/0.jpg)](https://www.youtube.com/watch?v=ELkKWYh8qOk)
+[![coozila pythos-webui setup in docker on ubuntu 22.04](https://img.youtube.com/vi/ELkKWYh8qOk/0.jpg)](https://www.youtube.com/watch?v=ELkKWYh8qOk)
 
 
 #### 1. update the drivers
@@ -100,19 +100,19 @@ sudo systemctl restart docker
 
 #### 5. clone the repo
 ```
-git clone https://github.com/oobabooga/text-generation-webui
-cd text-generation-webui
+git clone https://github.com/coozila/pythos-webui
+cd pythos-webui
 ```
 
 #### 6. prepare models
 download and place the models inside the models folder. tested with:
 
 4bit
-https://github.com/oobabooga/text-generation-webui/pull/530#issuecomment-1483891617
-https://github.com/oobabooga/text-generation-webui/pull/530#issuecomment-1483941105
+https://github.com/coozila/pythos-webui/pull/530#issuecomment-1483891617
+https://github.com/coozila/pythos-webui/pull/530#issuecomment-1483941105
 
 8bit:
-https://github.com/oobabooga/text-generation-webui/pull/530#issuecomment-1484235789
+https://github.com/coozila/pythos-webui/pull/530#issuecomment-1484235789
 
 #### 7. prepare .env file
 edit .env values to your needs.
@@ -151,7 +151,7 @@ continue at [5. clone the repo](#5-clone-the-repo)
 ### Windows
 #### 0. youtube video
 A video walking you through the setup can be found here:
-[![oobabooga text-generation-webui setup in docker on windows 11](https://img.youtube.com/vi/ejH4w5b5kFQ/0.jpg)](https://www.youtube.com/watch?v=ejH4w5b5kFQ)
+[![coozila pythos-webui setup in docker on windows 11](https://img.youtube.com/vi/ejH4w5b5kFQ/0.jpg)](https://www.youtube.com/watch?v=ejH4w5b5kFQ)
 
 #### 1. choco package manager
 install package manager  (https://chocolatey.org/ )
@@ -174,8 +174,8 @@ after reboot enter username/password in wsl
 clone the repo and edit .env values to your needs.
 ```
 cd Desktop
-git clone https://github.com/oobabooga/text-generation-webui
-cd text-generation-webui
+git clone https://github.com/coozila/pythos-webui
+cd pythos-webui
 COPY .env.example .env
 notepad .env
 ```
@@ -183,9 +183,9 @@ notepad .env
 #### 6. prepare models
 download and place the models inside the models folder. tested with:
 
-4bit https://github.com/oobabooga/text-generation-webui/pull/530#issuecomment-1483891617 https://github.com/oobabooga/text-generation-webui/pull/530#issuecomment-1483941105
+4bit https://github.com/coozila/pythos-webui/pull/530#issuecomment-1483891617 https://github.com/coozila/pythos-webui/pull/530#issuecomment-1483941105
 
-8bit: https://github.com/oobabooga/text-generation-webui/pull/530#issuecomment-1484235789
+8bit: https://github.com/coozila/pythos-webui/pull/530#issuecomment-1484235789
 
 #### 7. startup
 ```
@@ -205,4 +205,4 @@ export PATH="$HOME/.docker/cli-plugins:$PATH"
 
 ## Dedicated docker repository
 
-An external repository maintains a docker wrapper for this project as well as several pre-configured 'one-click' `docker compose` variants (e.g., updated branches of GPTQ). It can be found at: [Atinoda/text-generation-webui-docker](https://github.com/Atinoda/text-generation-webui-docker).
+An external repository maintains a docker wrapper for this project as well as several pre-configured 'one-click' `docker compose` variants (e.g., updated branches of GPTQ). It can be found at: [Atinoda/pythos-webui-docker](https://github.com/Atinoda/pythos-webui-docker).

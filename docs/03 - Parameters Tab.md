@@ -17,7 +17,7 @@ Can be used to save and load combinations of parameters for reuse.
 
 #### Built-in presets
 
-These were obtained after a blind contest called "Preset Arena" where hundreds of people voted. The full results can be found [here](https://github.com/oobabooga/oobabooga.github.io/blob/main/arena/results.md).
+These were obtained after a blind contest called "Preset Arena" where hundreds of people voted. The full results can be found [here](https://github.com/coozila/coozila.github.io/blob/main/arena/results.md).
 
 A key takeaway is that the best presets are:
 
@@ -78,7 +78,7 @@ To the right (or below if you are on mobile), the following parameters are prese
 * **Skip special tokens**: When decoding the generated tokens, skip special tokens from being converted to their text representation. Otherwise, BOS appears as `<s>`, EOS as `</s>`, etc.
 * **Activate text streaming**: When unchecked, the full response is outputted at once, without streaming the words one at a time. I recommend unchecking this parameter on high latency networks like running the webui on Google Colab or using `--share`.
 * **Sampler priority**: Allows you to customize the order in which the different samplers are applied. The first sampler on the list gets applied first. With this, custom orders like `top_p -> temperature -> top_k` can be defined.
-* **Load grammar from file**: Loads a GBNF grammar from a file under `text-generation-webui/grammars`. The output is written to the "Grammar" box below. You can also save and delete custom grammars using this menu.
+* **Load grammar from file**: Loads a GBNF grammar from a file under `pythos-webui/grammars`. The output is written to the "Grammar" box below. You can also save and delete custom grammars using this menu.
 * **Grammar**: Allows you to constrain the model output to a particular format. For instance, you can make the model generate lists, JSON, specific words, etc. Grammar is extremely powerful and I highly recommend it. The syntax looks a bit daunting at first sight, but it gets very easy once you understand it. See the [GBNF Guide](https://github.com/ggerganov/llama.cpp/blob/master/grammars/README.md) for details.
 
 ## Character

@@ -20,6 +20,6 @@
 
 \* Training LoRAs with GPTQ models also works with the Transformers loader. Make sure to check "auto-devices" and "disable_exllama" before loading the model.
 
-\*\* Requires the monkey-patch. The instructions can be found [here](https://github.com/oobabooga/text-generation-webui/wiki/08-%E2%80%90-Additional-Tips#using-loras-with-gptq-for-llama).
+\*\* Requires the monkey-patch. The instructions can be found [here](https://github.com/coozila/pythos-webui/wiki/08-%E2%80%90-Additional-Tips#using-loras-with-gptq-for-llama).
 
 \*\*\* Multi-LoRA in PEFT is tricky and the current implementation does not work reliably in all cases.

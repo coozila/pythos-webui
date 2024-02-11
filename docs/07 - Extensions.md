@@ -1,10 +1,10 @@
 # Extensions
 
-Extensions are defined by files named `script.py` inside subfolders of `text-generation-webui/extensions`. They are loaded at startup if the folder name is specified after the `--extensions` flag.
+Extensions are defined by files named `script.py` inside subfolders of `pythos-webui/extensions`. They are loaded at startup if the folder name is specified after the `--extensions` flag.
 
 For instance, `extensions/silero_tts/script.py` gets loaded with `python server.py --extensions silero_tts`.
 
-## [text-generation-webui-extensions](https://github.com/oobabooga/text-generation-webui-extensions)
+## [pythos-webui-extensions](https://github.com/coozila/pythos-webui-extensions)
 
 The repository above contains a directory of user extensions.
 
@@ -14,18 +14,18 @@ If you create an extension, you are welcome to host it in a GitHub repository an
 
 |Extension|Description|
 |---------|-----------|
-|[openai](https://github.com/oobabooga/text-generation-webui/tree/main/extensions/openai)| Creates an API that mimics the OpenAI API and can be used as a drop-in replacement. |
-|[multimodal](https://github.com/oobabooga/text-generation-webui/tree/main/extensions/multimodal) | Adds multimodality support (text+images). For a detailed description see [README.md](https://github.com/oobabooga/text-generation-webui/tree/main/extensions/multimodal/README.md) in the extension directory. |
-|[google_translate](https://github.com/oobabooga/text-generation-webui/tree/main/extensions/google_translate)| Automatically translates inputs and outputs using Google Translate.|
-|[silero_tts](https://github.com/oobabooga/text-generation-webui/tree/main/extensions/silero_tts)| Text-to-speech extension using [Silero](https://github.com/snakers4/silero-models). When used in chat mode, responses are replaced with an audio widget. |
-|[whisper_stt](https://github.com/oobabooga/text-generation-webui/tree/main/extensions/whisper_stt)| Allows you to enter your inputs in chat mode using your microphone. |
-|[sd_api_pictures](https://github.com/oobabooga/text-generation-webui/tree/main/extensions/sd_api_pictures)| Allows you to request pictures from the bot in chat mode, which will be generated using the AUTOMATIC1111 Stable Diffusion API. See examples [here](https://github.com/oobabooga/text-generation-webui/pull/309). |
-|[character_bias](https://github.com/oobabooga/text-generation-webui/tree/main/extensions/character_bias)| Just a very simple example that adds a hidden string at the beginning of the bot's reply in chat mode. |
-|[send_pictures](https://github.com/oobabooga/text-generation-webui/blob/main/extensions/send_pictures/)| Creates an image upload field that can be used to send images to the bot in chat mode. Captions are automatically generated using BLIP. |
-|[gallery](https://github.com/oobabooga/text-generation-webui/blob/main/extensions/gallery/)| Creates a gallery with the chat characters and their pictures. |
-|[superbooga](https://github.com/oobabooga/text-generation-webui/tree/main/extensions/superbooga)| An extension that uses ChromaDB to create an arbitrarily large pseudocontext, taking as input text files, URLs, or pasted text. Based on https://github.com/kaiokendev/superbig. |
-|[ngrok](https://github.com/oobabooga/text-generation-webui/tree/main/extensions/ngrok)| Allows you to access the web UI remotely using the ngrok reverse tunnel service (free). It's an alternative to the built-in Gradio `--share` feature. |
-|[perplexity_colors](https://github.com/oobabooga/text-generation-webui/tree/main/extensions/perplexity_colors)| Colors each token in the output text by its associated probability, as derived from the model logits. |
+|[openai](https://github.com/coozila/pythos-webui/tree/main/extensions/openai)| Creates an API that mimics the OpenAI API and can be used as a drop-in replacement. |
+|[multimodal](https://github.com/coozila/pythos-webui/tree/main/extensions/multimodal) | Adds multimodality support (text+images). For a detailed description see [README.md](https://github.com/coozila/pythos-webui/tree/main/extensions/multimodal/README.md) in the extension directory. |
+|[google_translate](https://github.com/coozila/pythos-webui/tree/main/extensions/google_translate)| Automatically translates inputs and outputs using Google Translate.|
+|[silero_tts](https://github.com/coozila/pythos-webui/tree/main/extensions/silero_tts)| Text-to-speech extension using [Silero](https://github.com/snakers4/silero-models). When used in chat mode, responses are replaced with an audio widget. |
+|[whisper_stt](https://github.com/coozila/pythos-webui/tree/main/extensions/whisper_stt)| Allows you to enter your inputs in chat mode using your microphone. |
+|[sd_api_pictures](https://github.com/coozila/pythos-webui/tree/main/extensions/sd_api_pictures)| Allows you to request pictures from the bot in chat mode, which will be generated using the AUTOMATIC1111 Stable Diffusion API. See examples [here](https://github.com/coozila/pythos-webui/pull/309). |
+|[character_bias](https://github.com/coozila/pythos-webui/tree/main/extensions/character_bias)| Just a very simple example that adds a hidden string at the beginning of the bot's reply in chat mode. |
+|[send_pictures](https://github.com/coozila/pythos-webui/blob/main/extensions/send_pictures/)| Creates an image upload field that can be used to send images to the bot in chat mode. Captions are automatically generated using BLIP. |
+|[gallery](https://github.com/coozila/pythos-webui/blob/main/extensions/gallery/)| Creates a gallery with the chat characters and their pictures. |
+|[superbooga](https://github.com/coozila/pythos-webui/tree/main/extensions/superbooga)| An extension that uses ChromaDB to create an arbitrarily large pseudocontext, taking as input text files, URLs, or pasted text. Based on https://github.com/kaiokendev/superbig. |
+|[ngrok](https://github.com/coozila/pythos-webui/tree/main/extensions/ngrok)| Allows you to access the web UI remotely using the ngrok reverse tunnel service (free). It's an alternative to the built-in Gradio `--share` feature. |
+|[perplexity_colors](https://github.com/coozila/pythos-webui/tree/main/extensions/perplexity_colors)| Colors each token in the output text by its associated probability, as derived from the model logits. |
 
 ## How to write an extension
 
@@ -97,7 +97,7 @@ only the first declaration encountered will be used and the rest will be ignored
 
 ## A full example
 
-The source code below can be found at [extensions/example/script.py](https://github.com/oobabooga/text-generation-webui/tree/main/extensions/example/script.py).
+The source code below can be found at [extensions/example/script.py](https://github.com/coozila/pythos-webui/tree/main/extensions/example/script.py).
 
 ```python
 """

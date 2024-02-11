@@ -1,6 +1,6 @@
 ## Audio notification
 
-If your computer takes a long time to generate each response for the model that you are using, you can enable an audio notification for when the response is completed. This feature was kindly contributed by HappyWorldGames in [#1277](https://github.com/oobabooga/text-generation-webui/pull/1277).
+If your computer takes a long time to generate each response for the model that you are using, you can enable an audio notification for when the response is completed. This feature was kindly contributed by HappyWorldGames in [#1277](https://github.com/coozila/pythos-webui/pull/1277).
 
 ### Installation
 
@@ -34,7 +34,7 @@ python download-model.py EleutherAI/gpt-j-6B --text-only
 
 When you load this model in default or notebook modes, the "HTML" tab will show the generated text in 4chan format:
 
-![Image3](https://github.com/oobabooga/screenshots/raw/main/gpt4chan.png)
+![Image3](https://github.com/coozila/screenshots/raw/main/gpt4chan.png)
 
 ## Using LoRAs with GPTQ-for-LLaMa
 

@@ -1,13 +1,13 @@
 Here you can restart the UI with new settings.
 
-* **Available extensions**: shows a list of extensions available under `text-generation-webui/extensions`.
+* **Available extensions**: shows a list of extensions available under `pythos-webui/extensions`.
 * **Boolean command-line flags**: shows command-line flags of bool (true/false) type.
 
 After selecting your desired flags and extensions, you can restart the UI by clicking on **Apply flags/extensions and restart**.
 
 ## Install or update an extension
 
-In this field, you can enter the GitHub URL for an extension and press enter to either install it (i.e. cloning it into `text-generation-webui/extensions`) or update it with `git pull` in case it is already cloned.
+In this field, you can enter the GitHub URL for an extension and press enter to either install it (i.e. cloning it into `pythos-webui/extensions`) or update it with `git pull` in case it is already cloned.
 
 Note that some extensions may include additional Python requirements. In this case, to install those you have to run the command
 

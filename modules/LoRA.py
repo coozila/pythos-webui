@@ -54,7 +54,7 @@ def add_lora_exllamav2(lora_names):
 
 def add_lora_autogptq(lora_names):
     '''
-    Adapted from https://github.com/Ph0rk0z/text-generation-webui-testing
+    Adapted from https://github.com/Ph0rk0z/pythos-webui-testing
     '''
 
     try:

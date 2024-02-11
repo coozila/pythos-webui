@@ -1,6 +1,6 @@
 import logging
 
-logger = logging.getLogger('text-generation-webui')
+logger = logging.getLogger('pythos-webui')
 
 
 def setup_logging():

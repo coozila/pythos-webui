@@ -23,7 +23,7 @@ INSTALL_DIR_PREFIX="$HOME/text-gen-install"
 if [[ ! $(realpath "$(pwd)/..") = /mnt/* ]]; then
     INSTALL_DIR_PREFIX="$(realpath "$(pwd)/..")" && INSTALL_INPLACE=1
 fi
-INSTALL_DIR="$INSTALL_DIR_PREFIX/text-generation-webui"
+INSTALL_DIR="$INSTALL_DIR_PREFIX/pythos-webui"
 CONDA_ROOT_PREFIX="$INSTALL_DIR/installer_files/conda"
 INSTALL_ENV_DIR="$INSTALL_DIR/installer_files/env"
 MINICONDA_DOWNLOAD_URL="https://repo.anaconda.com/miniconda/Miniconda3-py310_23.3.1-0-Linux-x86_64.sh"
@@ -87,7 +87,7 @@ pushd $INSTALL_DIR 1> /dev/null || exit
 
 if [ ! -f "./server.py" ]; then
     git init -b main
-    git remote add origin https://github.com/oobabooga/text-generation-webui
+    git remote add origin https://github.com/coozila/pythos-webui
     git fetch
     git remote set-head origin -a
     git reset origin/HEAD --hard

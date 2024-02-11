@@ -1,6 +1,6 @@
 ## WSL instructions
 
-If you do not have WSL installed, follow the [instructions below](https://github.com/oobabooga/text-generation-webui/wiki/10-%E2%80%90-WSL#wsl-installation) first.
+If you do not have WSL installed, follow the [instructions below](https://github.com/coozila/pythos-webui/wiki/10-%E2%80%90-WSL#wsl-installation) first.
 
 ### Additional WSL setup info
 
