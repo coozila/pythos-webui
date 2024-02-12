@@ -5,8 +5,8 @@ LABEL description="Docker image for Pythos WebUI"
 WORKDIR /builder
 ARG TORCH_CUDA_ARCH_LIST="${TORCH_CUDA_ARCH_LIST:-3.5;5.0;6.0;6.1;7.0;7.5;8.0;8.6+PTX}"
 ARG BUILD_EXTENSIONS="${BUILD_EXTENSIONS:-}"
-ARG APP_UID="${APP_UID:-6972}"
-ARG APP_GID="${APP_GID:-6972}"
+ARG APP_UID="${APP_UID:-1000}"
+ARG APP_GID="${APP_GID:-1000}"
 
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked,rw \
     apt update && \
