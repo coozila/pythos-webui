@@ -4,7 +4,7 @@ import gradio as gr
 from deep_translator import GoogleTranslator
 
 params = {
-    "activate": True,
+    "activate": False,
     "language string": "ro",
 }
 
