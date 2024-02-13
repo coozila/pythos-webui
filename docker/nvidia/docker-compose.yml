@@ -38,7 +38,8 @@ services:
     tty: true
     volumes:
       # Long term memory with quadrant https://github.com/jason-brian-anderson/long_term_memory_with_qdrant/blob/main/docker-compose.yml
-      - ./extensions/long_term_memory/qdrant:/app/qdrant
+      - ./extensions/settinx:/app/qdrant
+      - ./extensions/settings.yaml:/app/settings.yaml
       - ./cache:/home/app/pythos-webui/cache
       - ./installer_file:/home/app/pythos-webui/installer_file
       - ./characters:/home/app/pythos-webui/characters
