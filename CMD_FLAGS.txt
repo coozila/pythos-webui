@@ -1,3 +1,3 @@
 # Only used by the one-click installer.
 # Example:
---listen --api --extensions character_bias openai Training_PRO long_term_memory coozila_search google_translate code_syntax_highlight long_replies --model phind-codellama-34b-python-v1.Q4_K_M.gguf --settings settings.yaml
+--listen --api --extensions character_bias openai Training_PRO long_term_memory coozila_search google_translate code_syntax_highlight long_replies --settings settings.yaml --model phind-codellama-34b-v2.Q4_K_M.gguf 
