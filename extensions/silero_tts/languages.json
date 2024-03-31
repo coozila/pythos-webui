@@ -95,6 +95,12 @@
         "default_voice": "b_kalmyk",
         "model_id": "v4_cyrillic"
     },
+    "Kalmyk": {
+        "lang_id": "cyrillic",
+        "voices": ["kalmyk_delghir", "kalmyk_erdni"],
+        "default_voice": "kalmyk_delghir",
+        "model_id": "v4_cyrillic"
+    },
     "Karachay-Balkar": {
         "lang_id": "cyrillic",
         "voices": ["b_krc"],
@@ -165,12 +171,6 @@
         "lang_id": "cyrillic",
         "voices": ["b_sah"],
         "default_voice": "b_sah",
-        "model_id": "v4_cyrillic"
-    },
-    "Kalmyk": {
-        "lang_id": "cyrillic",
-        "voices": ["kalmyk_delghir", "kalmyk_erdni"],
-        "default_voice": "kalmyk_delghir",
         "model_id": "v4_cyrillic"
     }
 }

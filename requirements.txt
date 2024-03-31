@@ -100,3 +100,10 @@ sentence_transformers==2.2.2
 
 #xformers
 xformers==0.0.20
+
+# TTS coqui_tts
+TTS==0.21.3
+
+# api
+flask_cloudflared==0.0.14
+websockets==11.0.2
