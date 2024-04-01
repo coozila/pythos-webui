@@ -47,7 +47,6 @@ services:
       - ./loras:/home/app/text-generation-webui/loras
       - ./logs:/home/app/text-generation-webui/logs
       - ./models:/home/app/text-generation-webui/models
-      - ./modules:/home/app/text-generation-webui/modules
       - ./presets:/home/app/text-generation-webui/presets
       - ./prompts:/home/app/text-generation-webui/prompts
       - ./softprompts:/home/app/text-generation-webui/softprompts
