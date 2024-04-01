@@ -66,14 +66,14 @@ https://github.com/jllllll/GPTQ-for-LLaMa-CUDA/releases/download/0.1.1/gptq_for_
 https://github.com/jllllll/ctransformers-cuBLAS-wheels/releases/download/AVX2/ctransformers-0.2.27+cu121-py3-none-any.whl
 autoawq==0.1.8; platform_system == "Linux" or platform_system == "Windows"
 
-#coozila search
+# coozila search
 requests
 beautifulsoup4
 summarizer
 datetime
 PyPDF2
 
-#superboogav2
+# superboogav2
 beautifulsoup4==4.12.2
 chromadb==0.3.18
 lxml
@@ -85,20 +85,20 @@ spacy
 pytextrank
 num2words
 
-#google translator
+# google_translate
 deep-translator==1.9.2
 
-#openai
+# openai
 SpeechRecognition==3.10.0
 flask_cloudflared==0.0.12
 sentence-transformers
 tiktoken
 
-#long Term Memory Qdrant
+# long Term Memory Qdrant
 qdrant-client==1.5.4
 sentence_transformers==2.2.2
 
-#xformers
+# xformers
 xformers==0.0.20
 
 # TTS coqui_tts
